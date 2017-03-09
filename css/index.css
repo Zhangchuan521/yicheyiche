@@ -1,0 +1,475 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+#top {
+  width: 100%;
+  height: 100%; }
+  #top header {
+    width: 1260px;
+    height: 40px;
+    background: lightgray;
+    line-height: 40px;
+    font-size: 18px;
+    color: gray;
+    margin: 0 auto; }
+    #top header span {
+      float: left;
+      margin-left: 30px; }
+    #top header p {
+      float: right;
+      margin-right: 30px; }
+      #top header p a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: gray; }
+
+#search {
+  width: 100%;
+  height: 100%; }
+  #search #search-content {
+    width: 1260px;
+    height: 80px;
+    margin: 0 auto; }
+    #search #search-content #logo {
+      width: 200px;
+      height: 80px;
+      background: red;
+      margin-left: 30px;
+      float: left; }
+    #search #search-content #txt {
+      width: 500px;
+      height: 30px;
+      margin-top: 24px;
+      margin-left: 100px;
+      border: 2px solid red; }
+    #search #search-content #btn {
+      width: 60px;
+      height: 34px;
+      background: red;
+      border: none;
+      position: absolute;
+      margin-top: 24px; }
+    #search #search-content img {
+      float: right;
+      height: 80px; }
+
+#banner {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+  #banner img {
+    width: 1260px; }
+
+#nav {
+  width: 100%;
+  height: 500px;
+  background: url(../images/suvbg2.jpg) no-repeat center; }
+  #nav #first {
+    width: 1160px;
+    height: 100px;
+    margin: 0 auto;
+    border-bottom: 1px solid lightgray; }
+    #nav #first li {
+      float: left;
+      list-style: none;
+      padding: 0 21px;
+      text-align: center;
+      margin-top: 25px; }
+      #nav #first li a {
+        text-decoration: none;
+        color: black; }
+        #nav #first li a span {
+          display: block;
+          width: 44px;
+          height: 26px;
+          background: url(../images/cars.png) no-repeat 0px 0px; }
+        #nav #first li a:hover {
+          color: blue; }
+  #nav #first li:nth-child(2) a span {
+    background: url(../images/cars.png) no-repeat 0px -25px; }
+  #nav #first li:nth-child(3) a span {
+    background: url(../images/cars.png) no-repeat 0px -52px; }
+  #nav #first li:nth-child(4) a span {
+    background: url(../images/cars.png) no-repeat 0px -78px; }
+  #nav #first li:nth-child(5) a span {
+    background: url(../images/cars.png) no-repeat 0px -104px; }
+  #nav #first li:nth-child(6) a span {
+    background: url(../images/cars.png) no-repeat 0px -130px; }
+  #nav #first li:nth-child(7) a span {
+    background: url(../images/cars.png) no-repeat 0px -155px; }
+  #nav #first li:nth-child(8) a span {
+    background: url(../images/cars.png) no-repeat 0px -180px; }
+  #nav #first li:nth-child(9) a span {
+    background: url(../images/cars.png) no-repeat 0px -206px; }
+  #nav #first li:nth-child(10) a span {
+    background: url(../images/cars.png) no-repeat 0px -234px; }
+  #nav #first li:nth-child(11) a span {
+    background: url(../images/cars.png) no-repeat 0px -260px; }
+  #nav #first li:nth-child(12) a span {
+    background: url(../images/cars.png) no-repeat 0px -288px; }
+  #nav #first li:nth-child(13) a span {
+    background: url(../images/cars.png) no-repeat 0px -314px; }
+  #nav #second {
+    width: 1160px;
+    height: 50px;
+    margin: 0 auto;
+    border-bottom: 2px solid lightgray;
+    position: relative; }
+    #nav #second li {
+      float: left;
+      list-style: none;
+      padding: 0 24px;
+      line-height: 50px; }
+      #nav #second li a {
+        display: block;
+        height: 50px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 18px; }
+        #nav #second li a:hover {
+          color: red;
+          border-bottom: 2px solid red; }
+      #nav #second li ul {
+        width: 1160px;
+        height: 150px;
+        display: none;
+        position: absolute;
+        top: 52px;
+        left: 0px; }
+        #nav #second li ul li {
+          width: 1110px;
+          height: 50px;
+          border-bottom: 1px solid lightgray; }
+          #nav #second li ul li a {
+            width: 100px;
+            font-size: 16px;
+            float: left;
+            text-align: left;
+            font-weight: normal;
+            padding-left: 50px; }
+            #nav #second li ul li a:hover {
+              border: none; }
+      #nav #second li .show {
+        display: block; }
+  #nav #photo {
+    width: 1160px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    left: 0px;
+    top: 156px; }
+    #nav #photo #last {
+      width: 1160px;
+      height: 200px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      border-bottom: 1px solid lightgray; }
+      #nav #photo #last li {
+        float: left;
+        list-style: none;
+        margin: 10px 10px;
+        height: 200px;
+        width: 173px;
+        text-align: center; }
+        #nav #photo #last li img {
+          width: 173px;
+          height: 140px; }
+        #nav #photo #last li span {
+          display: block;
+          margin-top: 10px; }
+          #nav #photo #last li span a {
+            text-decoration: none;
+            color: black; }
+            #nav #photo #last li span a:hover {
+              color: red; }
+
+#autoPlay {
+  width: 1260px;
+  height: 440px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 20px; }
+  #autoPlay ul {
+    width: 1200px;
+    height: 440px;
+    position: absolute;
+    left: 30px;
+    top: 0;
+    overflow: hidden; }
+    #autoPlay ul li {
+      width: 1260px;
+      height: 440px;
+      float: left;
+      list-style: none; }
+      #autoPlay ul li div:nth-child(1) {
+        position: absolute;
+        left: 0px;
+        top: 1px; }
+      #autoPlay ul li div:nth-child(2) {
+        position: absolute;
+        left: 0px;
+        top: 209px; }
+      #autoPlay ul li div:nth-child(3) {
+        position: absolute;
+        left: 310px;
+        top: 0px; }
+      #autoPlay ul li div:nth-child(4) {
+        position: absolute;
+        left: 900px;
+        top: 1px; }
+      #autoPlay ul li div:nth-child(5) {
+        position: absolute;
+        left: 900px;
+        top: 209px; }
+  #autoPlay #quanquan {
+    width: 160px;
+    height: 50px;
+    position: absolute;
+    left: 550px;
+    top: 410px; }
+    #autoPlay #quanquan li {
+      width: 10px;
+      height: 10px;
+      background: darkslategray;
+      border-radius: 10px;
+      margin: 20px 8px; }
+    #autoPlay #quanquan .active {
+      width: 60px;
+      background: red; }
+
+#WOM {
+  width: 100%;
+  height: 100%; }
+  #WOM img {
+    width: 1200px;
+    height: 80px;
+    margin: 16px auto 0px;
+    display: block; }
+
+#newCars {
+  width: 100%;
+  height: 100%; }
+  #newCars div:nth-child(1) {
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    line-height: 50px;
+    border-bottom: 4px solid red;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid lightgray; }
+    #newCars div:nth-child(1) h2 {
+      float: left;
+      margin-left: 30px;
+      font-size: 46px;
+      color: red; }
+    #newCars div:nth-child(1) h3 {
+      float: right;
+      margin-right: 30px;
+      font-size: 38px;
+      color: red; }
+    #newCars div:nth-child(1) a {
+      text-decoration: none;
+      font-size: 18px;
+      color: black;
+      margin-left: 20px; }
+      #newCars div:nth-child(1) a:hover {
+        color: red; }
+  #newCars #box {
+    width: 1200px;
+    height: 550px;
+    margin: 0 auto;
+    position: relative; }
+    #newCars #box #box-left {
+      width: 450px;
+      height: 500px;
+      background: red;
+      position: absolute;
+      left: 0px;
+      top: 0px; }
+    #newCars #box #box-center {
+      width: 400px;
+      height: 522px;
+      margin-right: 50px;
+      position: absolute;
+      left: 450px;
+      top: 22px; }
+      #newCars #box #box-center dl {
+        overflow: hidden;
+        margin-bottom: 20px;
+        border-bottom: 1px solid lightgray; }
+        #newCars #box #box-center dl dt {
+          float: left; }
+          #newCars #box #box-center dl dt img {
+            height: 150px; }
+        #newCars #box #box-center dl dd {
+          float: left;
+          margin-left: 20px; }
+          #newCars #box #box-center dl dd a {
+            line-height: 40px;
+            font-size: 24px;
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: black; }
+            #newCars #box #box-center dl dd a:hover {
+              color: red; }
+          #newCars #box #box-center dl dd p:nth-child(2) {
+            line-height: 30px;
+            font-size: 18px;
+            color: red; }
+          #newCars #box #box-center dl dd p:nth-child(3) {
+            line-height: 30px;
+            font-size: 14px;
+            color: darkgray; }
+          #newCars #box #box-center dl dd p:nth-child(4) {
+            line-height: 40px;
+            margin-top: 10px; }
+            #newCars #box #box-center dl dd p:nth-child(4) a {
+              font-size: 16px;
+              color: black; }
+              #newCars #box #box-center dl dd p:nth-child(4) a:hover {
+                color: red; }
+    #newCars #box #box-right {
+      width: 300px;
+      height: 522px;
+      position: absolute;
+      left: 900px;
+      top: 22px; }
+      #newCars #box #box-right ul li {
+        list-style: none;
+        margin-bottom: 2px;
+        text-align: center; }
+        #newCars #box #box-right ul li a {
+          width: 80px;
+          height: 56px;
+          display: block;
+          text-decoration: none;
+          background: darkgray;
+          line-height: 60px;
+          color: black; }
+          #newCars #box #box-right ul li a:hover {
+            color: #fff;
+            font-weight: bold;
+            background: red; }
+        #newCars #box #box-right ul li div {
+          position: absolute;
+          left: 90px;
+          top: 0px;
+          display: none; }
+          #newCars #box #box-right ul li div p {
+            width: 200px;
+            overflow: hidden;
+            border-top: 1px solid lightgray;
+            border-bottom: 1px solid lightgray; }
+            #newCars #box #box-right ul li div p img {
+              margin: 10px 10px 0px 10px;
+              height: 70px;
+              float: left; }
+            #newCars #box #box-right ul li div p span {
+              float: left;
+              line-height: 90px; }
+            #newCars #box #box-right ul li div p b {
+              line-height: 46px;
+              float: left;
+              font-weight: normal; }
+            #newCars #box #box-right ul li div p a {
+              height: 46px;
+              line-height: 46px;
+              margin-left: 30px;
+              text-align: left;
+              background: #fff;
+              float: left; }
+              #newCars #box #box-right ul li div p a:hover {
+                color: red;
+                background: #fff; }
+        #newCars #box #box-right ul li .show {
+          display: block; }
+
+#quiz {
+  width: 100%;
+  height: 100%; }
+  #quiz img {
+    width: 1200px;
+    height: 80px;
+    margin: 16px auto 0px;
+    display: block; }
+
+#question {
+  width: 100%;
+  height: 100%; }
+  #question div:nth-child(1) {
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    line-height: 50px;
+    border-bottom: 4px solid red;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid lightgray; }
+    #question div:nth-child(1) h2 {
+      float: left;
+      margin-left: 30px;
+      font-size: 46px;
+      color: red; }
+    #question div:nth-child(1) h3 {
+      float: right;
+      margin-right: 30px;
+      font-size: 38px;
+      color: red; }
+    #question div:nth-child(1) p {
+      font-size: 16px;
+      color: gray;
+      float: left;
+      margin: 14px 0px 0px 460px; }
+      #question div:nth-child(1) p span {
+        font-size: 14px;
+        color: red; }
+    #question div:nth-child(1) a {
+      text-decoration: none;
+      font-size: 16px;
+      color: black;
+      margin-left: 20px;
+      float: left;
+      margin-top: 14px; }
+      #question div:nth-child(1) a:hover {
+        color: red; }
+  #question #bottom {
+    width: 1200px;
+    height: 280px;
+    margin: 0 auto;
+    margin-top: 20px; }
+    #question #bottom #pic {
+      width: 360px;
+      height: 280px;
+      overflow: hidden;
+      margin: 0px 0px 0px 0px;
+      position: relative; }
+      #question #bottom #pic ul {
+        width: 360px;
+        height: 230px;
+        position: absolute;
+        left: 0px;
+        top: 0px; }
+        #question #bottom #pic ul li {
+          list-style: none;
+          display: none;
+          position: absolute;
+          left: 0px;
+          top: 0px; }
+          #question #bottom #pic ul li img {
+            width: 360px;
+            display: block; }
+        #question #bottom #pic ul .show {
+          display: block; }
+      #question #bottom #pic div {
+        width: 360px;
+        height: 100px;
+        background: red;
+        margin-top: 180px; }
+
+/*# sourceMappingURL=index.css.map */

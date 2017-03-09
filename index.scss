@@ -1,0 +1,607 @@
+@charset "utf-8";
+
+$widthAll: 1260px;
+*{
+    padding: 0;
+    margin: 0;
+}
+//头部
+#top{
+    width: 100%;
+    height: 100%;
+    header{
+        width: $widthAll;
+        height: 40px;
+        background: lightgray;
+        line-height: 40px;
+        font-size: 18px;
+        color: gray;
+        margin: 0 auto;
+        span{
+            float: left;
+            margin-left: 30px;        
+        }
+         p{
+            float: right;        
+            margin-right: 30px;        
+            a{
+                margin-right: 10px;
+                text-decoration: none;
+                color: gray;
+            }       
+        }
+    }
+}
+
+//搜索框部分
+#search{
+    width: 100%;
+    height: 100%;
+    #search-content{
+        width: $widthAll;
+        height: 80px;
+        margin: 0 auto;
+        #logo{
+            width: 200px;
+            height: 80px;
+            background: red;
+            margin-left: 30px;
+            float: left;
+        }
+        #txt{
+            width: 500px;
+            height: 30px;
+            margin-top: 24px;
+            margin-left: 100px;
+            border: 2px solid red;
+        }
+        #btn{
+            width: 60px;
+            height: 34px;
+            background: red;
+            border: none;
+            position: absolute;
+            margin-top: 24px;
+        }
+        img{
+            float: right;
+            height: 80px;
+        }
+    }
+}
+
+//广告图部分
+#banner{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    img{
+        width: $widthAll;      
+    }
+}
+
+//导航部分
+#nav{
+    width: 100%;
+    height: 500px;   
+    background:url(../images/suvbg2.jpg) no-repeat center;
+    #first{
+        width: 1160px;
+        height: 100px;
+        margin: 0 auto;
+        border-bottom: 1px solid lightgray;
+        li{
+            float: left;
+            list-style: none;
+            padding: 0 21px;
+            text-align: center;
+            margin-top: 25px;
+            a{
+                span{
+                    display: block;
+                    width: 44px;
+                    height: 26px;
+                    background: url(../images/cars.png) no-repeat 0px 0px;
+                }               
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    color: blue;
+                }            
+            }
+        }
+    }
+    #first li:nth-child(2) a span{
+        background: url(../images/cars.png) no-repeat 0px -25px;
+    }
+    #first li:nth-child(3) a span{
+        background: url(../images/cars.png) no-repeat 0px -52px;
+    }
+    #first li:nth-child(4) a span{
+        background: url(../images/cars.png) no-repeat 0px -78px;
+    }
+    #first li:nth-child(5) a span{
+        background: url(../images/cars.png) no-repeat 0px -104px;
+    }
+    #first li:nth-child(6) a span{
+        background: url(../images/cars.png) no-repeat 0px -130px;
+    }
+    #first li:nth-child(7) a span{
+        background: url(../images/cars.png) no-repeat 0px -155px;
+    }
+    #first li:nth-child(8) a span{
+        background: url(../images/cars.png) no-repeat 0px -180px;
+    }
+    #first li:nth-child(9) a span{
+        background: url(../images/cars.png) no-repeat 0px -206px;
+    }
+    #first li:nth-child(10) a span{
+        background: url(../images/cars.png) no-repeat 0px -234px;
+    }
+    #first li:nth-child(11) a span{
+        background: url(../images/cars.png) no-repeat 0px -260px;
+    }
+    #first li:nth-child(12) a span{
+        background: url(../images/cars.png) no-repeat 0px -288px;
+    }
+    #first li:nth-child(13) a span{
+        background: url(../images/cars.png) no-repeat 0px -314px;
+    }
+    
+    
+    #second{
+        width: 1160px;
+        height: 50px;
+        margin: 0 auto;
+        border-bottom: 2px solid lightgray;
+        position: relative; 
+        li{          
+            float: left;
+            list-style: none;
+            padding: 0 24px;
+            line-height: 50px; 
+                    
+            a{
+                display: block;
+                height: 50px;
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                font-size: 18px;
+                &:hover{
+                    color: red;
+                    border-bottom: 2px solid red;
+                }    
+            }
+            ul{
+                width: 1160px;
+                height: 150px;
+                display: none;
+                position: absolute;
+                top: 52px;
+                left: 0px;
+                li{
+                    width: 1110px;
+                    height: 50px;
+                    border-bottom: 1px solid lightgray;                  
+                    a{
+                        width: 100px;
+                        font-size: 16px;
+                        float: left;
+                        text-align: left;
+                        font-weight: normal;
+                        padding-left: 50px;
+                        &:hover{
+                            border: none;
+                        }
+                        
+                    }
+                }   
+            }
+            .show{
+                display: block;    
+            }
+        }
+    }
+    
+    #photo{
+        width: 1160px;
+        height: 200px;
+        margin: 0 auto;
+        position: relative;
+        left: 0px;
+        top: 156px;
+        #last{
+            width: 1160px;
+            height: 200px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            
+            border-bottom: 1px solid lightgray;
+            li{
+                float: left;
+                list-style: none;
+                margin: 10px 10px;
+                height: 200px;
+                width: 173px;
+                text-align: center;
+                img{
+                    width: 173px;
+                    height: 140px;
+                }
+                span{
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                    display: block;
+                    margin-top: 10px;
+                }
+            }      
+        }       
+    }   
+}
+
+//轮播图部分
+#autoPlay{
+    width: $widthAll;
+    height: 440px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+    ul{
+        width: 1200px;
+        height: 440px;
+        position: absolute;
+        left: 30px;
+        top: 0;
+        overflow: hidden;
+         li{
+            width: $widthAll;
+            height: 440px;
+            float: left;
+            list-style: none;
+            div:nth-child(1) {
+                position: absolute;
+                left: 0px;
+                top: 1px;
+            }
+            div:nth-child(2) {
+                position: absolute;
+                left: 0px;
+                top: 209px;
+            }
+            div:nth-child(3) {
+                position: absolute;
+                left: 310px;
+                top: 0px;
+            }
+            div:nth-child(4) {
+                position: absolute;
+                left: 900px;
+                top: 1px;
+            }
+            div:nth-child(5) {
+                position: absolute;
+                left: 900px;
+                top: 209px;
+            }
+        }       
+    }
+    #quanquan{
+        width: 160px;
+        height: 50px;
+        position: absolute;
+        left: 550px;
+        top: 410px;
+        li{
+            width: 10px;
+            height: 10px;
+            background: darkslategray;
+            border-radius: 10px;
+            margin: 20px 8px;    
+        }
+        .active{
+            width: 60px;
+            background: red;
+        }
+    }
+}
+
+//易口碑图片
+#WOM{
+    width: 100%;
+    height: 100%;   
+    img{
+        width: 1200px;
+        height: 80px;
+        margin: 16px auto 0px;
+        display: block;
+    }
+}
+
+//新车上市
+#newCars{
+    width: 100%;
+    height: 100%;
+    div:nth-child(1){
+        width: 1200px;
+        height: 60px;
+        margin: 0 auto;
+        line-height: 50px;
+        border-bottom: 4px solid red;
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid lightgray;
+        h2{
+            float: left;
+            margin-left: 30px;
+            font-size: 46px;
+            color: red;
+        }
+        h3{
+            float: right;
+            margin-right: 30px;
+            font-size: 38px;
+            color: red;
+        }
+        a{
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            margin-left: 20px;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+    #box{
+        width: 1200px;
+        height: 550px;
+        margin: 0 auto;
+        position: relative;
+        #box-left{
+            width: 450px;
+            height: 500px;
+            background: red;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        #box-center{
+            width: 400px;
+            height: 522px;
+            margin-right: 50px;           
+            position: absolute;
+            left: 450px;
+            top: 22px;
+            dl{
+                overflow: hidden;
+                margin-bottom: 20px;
+                border-bottom: 1px solid lightgray;
+                dt{
+                    float: left;
+                    img{
+                        height: 150px;
+                    }
+                }
+                dd{
+                    float: left;
+                    margin-left: 20px;
+                    a{
+                        line-height: 40px;
+                        font-size: 24px;
+                        display: block;
+                        margin-top: 10px;
+                        text-decoration: none;
+                        color: black;
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                    p:nth-child(2){
+                        line-height: 30px;
+                        font-size: 18px;
+                        color: red;
+                    }
+                    p:nth-child(3){
+                        line-height: 30px;
+                        font-size: 14px;
+                        color: darkgray;
+                    }
+                    p:nth-child(4){
+                        a{
+                            font-size: 16px;
+                            color: black;
+                            &:hover{
+                                color: red;
+                            }
+                        } 
+                        line-height: 40px;               
+                        margin-top: 10px;
+                    }
+                }                 
+            }           
+        }
+        #box-right{
+            width: 300px;
+            height: 522px;
+            position: absolute;
+            left: 900px;
+            top: 22px;
+            ul{
+                
+            
+                li{
+                    list-style: none;
+                    margin-bottom: 2px;
+                    text-align: center;
+                    a{
+                        width: 80px;
+                        height: 56px;
+                        display: block;
+                        text-decoration: none;
+                        background: darkgray;
+                        line-height: 60px;
+                        color: black;
+                        &:hover{
+                            color: #fff;
+                            font-weight: bold;
+                            background: red;
+                        }
+                    }
+                    div{
+                        position: absolute;
+                        left: 90px;
+                        top: 0px;
+                        display: none;
+                        p{
+                            width: 200px;
+                            overflow: hidden;
+                            border-top: 1px solid lightgray;
+                            border-bottom: 1px solid lightgray;
+                            img{
+                                margin: 10px 10px 0px 10px;
+                                height: 70px;
+                                float: left;
+                            }
+                            span{
+                                float: left;
+                                line-height: 90px;
+                            }
+                            b{
+                                line-height: 46px;
+                                float: left;
+                                font-weight: normal; 
+                            }
+                            a{
+                                height: 46px;
+                                line-height: 46px;
+                                margin-left: 30px;
+                                text-align: left;
+                                background: #fff; 
+                                float: left;                                
+                                &:hover{
+                                    color: red;
+                                    background: #fff;
+                                }
+                            }
+                        }
+                    }
+                    .show{
+                        display: block;
+                    }
+                    
+                }
+            }           
+        }
+    }
+}
+
+//问答图片
+#quiz{
+    width: 100%;
+    height: 100%;   
+    img{
+        width: 1200px;
+        height: 80px;
+        margin: 16px auto 0px;
+        display: block;
+    }
+}
+
+//汽车问答
+#question{
+    width: 100%;
+    height: 100%;
+    div:nth-child(1){
+        width: 1200px;
+        height: 60px;
+        margin: 0 auto;
+        line-height: 50px;
+        border-bottom: 4px solid red;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid lightgray;
+        h2{
+            float: left;
+            margin-left: 30px;
+            font-size: 46px;
+            color: red;
+        }
+        h3{
+            float: right;
+            margin-right: 30px;
+            font-size: 38px;
+            color: red;
+        }
+        p{
+            font-size: 16px;
+            color: gray;
+            float: left;
+            margin: 14px 0px 0px 460px;
+            span{
+                font-size: 14px;
+                color: red;
+            }
+        }
+        a{
+            text-decoration: none;
+            font-size: 16px;
+            color: black;
+            margin-left: 20px;
+            float: left;
+            margin-top: 14px;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+    #bottom{
+        width: 1200px;
+        height: 280px;
+        margin: 0 auto;
+        margin-top: 20px;
+        #pic{
+            width: 360px;
+            height: 280px;
+            overflow: hidden;
+            margin: 0px 0px 0px 0px;
+            position: relative;
+                
+            ul{
+                width: 360px;
+                height: 230px;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                li{
+                    list-style: none;
+                    display: none;
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    img{
+                        width: 360px;
+                        display: block;
+                    }
+                }
+                .show{
+                    display: block;
+                }
+            }
+            div{
+                width: 360px;
+                height: 100px;
+                background: red;
+                margin-top: 180px;
+            }
+        }
+    }
+    
+}
