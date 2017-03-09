@@ -49,11 +49,12 @@ $widthAll: 1260px;
             float: left;
         }
         #txt{
-            width: 500px;
+            width: 480px;
             height: 30px;
             margin-top: 24px;
             margin-left: 100px;
             border: 2px solid red;
+            padding-left: 20px;
         }
         #btn{
             width: 60px;
@@ -62,6 +63,7 @@ $widthAll: 1260px;
             border: none;
             position: absolute;
             margin-top: 24px;
+            color: #fff;
         }
         img{
             float: right;
@@ -346,7 +348,7 @@ $widthAll: 1260px;
         }
         h3{
             float: right;
-            margin-right: 30px;
+            margin-right: 150px;
             font-size: 38px;
             color: red;
         }
@@ -535,8 +537,8 @@ $widthAll: 1260px;
             color: red;
         }
         h3{
-            float: right;
-            margin-right: 30px;
+            float: left;
+            margin-left: 50px;
             font-size: 38px;
             color: red;
         }
@@ -544,7 +546,7 @@ $widthAll: 1260px;
             font-size: 16px;
             color: gray;
             float: left;
-            margin: 14px 0px 0px 460px;
+            margin: 14px 0px 0px 290px;
             span{
                 font-size: 14px;
                 color: red;
@@ -573,7 +575,7 @@ $widthAll: 1260px;
             overflow: hidden;
             margin: 0px 0px 0px 0px;
             position: relative;
-                
+            float: left;
             ul{
                 width: 360px;
                 height: 230px;
@@ -602,6 +604,190 @@ $widthAll: 1260px;
                 margin-top: 180px;
             }
         }
+        #seek{
+            width: 480px;
+            height: 305px;
+            float: left;
+            
+            #_txt{
+                width: 300px;
+                height: 30px;
+                border: 2px solid red;
+                margin: 0px 50px 10px;
+                padding-left: 20px;
+            }
+            #_btn{
+                width: 60px;
+                height: 34px;
+                background: red;
+                border: none; 
+                position: absolute;
+                left: 766px;  
+                color: #fff;                          
+            }
+            p{
+                height: 40px;
+                margin-left: 50px;
+                a:nth-child(1){
+                    padding: 0px 20px 0px 0px;
+                    border-right: 1px solid gray;
+                    text-decoration: none;
+                    color: black;
+                    &:hover{
+                        color: red;
+                    }
+                }
+                a:nth-child(2){
+                    padding: 0px 0px 0px 20px;
+                    border-left: 1px solid gray;
+                    text-decoration: none;
+                    color: black;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+        #app{
+            width: 360px;
+            height: 305px;
+            float: left;
+            background: red;
+        }
+    }   
+}
+
+//汽车视频
+#video{
+    width: 1200px;
+    height: 500px;
+    background: yellow;
+    margin: 26px auto 10px;     
+    div:nth-child(1){
+        width: 1200px;
+        height: 60px;
+        margin: 0 auto;
+        line-height: 50px;
+        border-bottom: 4px solid red;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid lightgray;
+        h2{
+            float: left;
+            margin-left: 30px;
+            font-size: 46px;
+            color: red;
+        }
+        h3{
+            float: left;
+            margin-left: 50px;
+            font-size: 38px;
+            color: red;
+        }
+        a{
+            text-decoration: none;
+            font-size: 16px;
+            color: black;
+            margin-left: 20px;
+            float: left;
+            margin-top: 14px;
+            &:hover{
+                color: red;
+            }
+        }
+    }  
+    ul{
+        margin-top: 10px;
+        li{
+            height: 40px;
+            list-style: none;
+            float: left;   
+            a{
+                width: 130px;
+                height: 50px;
+                display: block;
+                background: lightgray;
+                margin-right: 10px;
+                text-align: center;
+                line-height: 50px;
+                text-decoration: none;
+                font-size: 18px;
+                color: black;
+                &:hover{
+                    background: red;
+                    color: #fff;                    
+                }
+            }
+        }
     }
-    
+    .show{
+        div:nth-child(1){
+            border: none;
+        }
+    }
+}
+
+//汽车报价图片
+#offer{
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+//尾部
+#footer{
+    width: 1200px;
+    height: 300px;
+    padding-top: 30px;
+    background: #21488c;
+    margin: 0 auto;
+    div:nth-child(1){
+        width: 380px;
+        height: 250px;
+        float: left;
+        border-right: 1px dotted #FFFF00;
+        p{
+            margin: 0px 0px 40px 30px;
+            a{
+                color: #5884cf;
+                text-decoration: none;
+            }
+        }
+    }
+    div:nth-child(2){
+        width: 460px;
+        height: 300px;
+        float: left;
+        margin-left: 20px;
+        ul{
+            float: left;
+            margin: 30px 0px 0px 40px;
+            h2{
+                color: #5884cf;
+                margin-bottom: 40px;
+            }
+            li{
+                height: 40px;
+                color: #fff;
+                margin-left: 20px;
+                a{
+                    color: #fff;
+                    font-size: 16px;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    div:nth-child(3){
+        width: 338px;
+        height: 300px;
+        float: left;
+        img{
+            margin: 20px 14px 0px;
+        }
+    }
 }
