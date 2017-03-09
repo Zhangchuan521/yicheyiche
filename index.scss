@@ -381,7 +381,6 @@ a{
         #box-center{
             width: 400px;
             height: 522px;
-            margin-right: 50px;           
             position: absolute;
             left: 450px;
             top: 22px;
@@ -443,21 +442,31 @@ a{
                 
             
                 li{
+                    width: 80px;
+                    height: 56px;
                     list-style: none;
+                    background: gold;
                     margin-bottom: 2px;
                     text-align: center;
-                    a{
-                        width: 80px;
-                        height: 56px;
+                    line-height: 56px;
+                    position: relative;
+                    a:nth-child(1){
+                        width: 66px;
+                        height: 36px;
                         display: block;
+                        line-height: 36px;
+                        border-radius: 5px 0 0 5px;
+                        text-align: left;
+                        padding-left: 8px;
                         text-decoration: none;
-                        background: darkgray;
-                        line-height: 60px;
-                        color: black;
+                        color: #fff;
+                        position: absolute;
+                        left: 10px;
+                        top: 10px;
                         &:hover{
-                            color: #fff;
+                            color: black;
                             font-weight: bold;
-                            background: red;
+                            background: #fff;
                         }
                     }
                     div{
@@ -599,10 +608,15 @@ a{
                 }
             }
             div{
-                width: 360px;
+                width: 340px;
                 height: 100px;
                 background: red;
                 margin-top: 180px;
+                line-height: 120px;
+                padding: 10px;
+                font-size: 19px;
+                color: #fff;
+                font-weight: bold;
             }
         }
         #seek{
@@ -652,8 +666,28 @@ a{
         #app{
             width: 360px;
             height: 305px;
-            float: left;
-            background: red;
+            float: left;           
+            li{
+                width: 180px;
+                height: 170px;
+                list-style: none;
+                text-align: center;
+                float: left;
+                img{
+                    display: block;
+                    margin: 0px 0px 10px 50px;
+                }
+                a{
+                    font-size: 14px;
+                    color: black;
+                    margin-bottom: 4px;
+                    display: block;
+                }
+                span{
+                    font-size: 14px;
+                    color: gray;
+                }
+            }
         }
     }   
 }
@@ -744,7 +778,7 @@ a{
             margin-top: 10px;
             float: left;
             position:relative;                   
-            p{
+            div{
                 width: 360px;
                 height: 120px;
                 display: block;
@@ -752,7 +786,21 @@ a{
                 position: absolute;
                 left: 0px;
                 bottom: 0px;
-               
+                color: #fff;
+                font-size: 24px;
+                font-weight: bold;
+                .fa{
+                    margin: 0px 10px;
+                    font-size: 46px;
+                    line-height: 110px;
+                    float: left;
+                }
+                span:nth-child(2){
+                    float: left;
+                    width:280px;
+                    line-height:30px;
+                    margin-top:25px;
+                }
             }
         }
         div:nth-child(2){
@@ -774,12 +822,19 @@ a{
                 dd{
                     width:230px;
                     height:50px;
-                    background:rgba(0,0,0,0.5);
-                    a{
-                        display:block;
-                        width:100%;
-                        height:100%;
-                        color:#fff;
+                    background:black;
+                    font-size: 14px;
+                    line-height: 50px;
+                    color:#fff;
+                    font-weight: 600;
+                    .fa{
+                        line-height:50px;
+                        font-size:28px;
+                        float:left;
+                        margin:0px 10px;
+                    }
+                    span:nth-child(2){
+                        float:left;
                     }
                 }
                 
@@ -795,7 +850,7 @@ a{
         position:absolute;
         right:0px;
         top:95px;
-        p{
+        p:nth-child(1){
             width:100%;
             height:50px;
             a{
@@ -816,7 +871,46 @@ a{
         #content{
             width:100%;
             height:370px;
+            text-align: center;
             background:#D3D3D3;
+            img{
+                margin-top: 20px;
+            }
+            div{
+                margin-top: 20px;
+                height: 60px;
+                text-align: left;
+                padding-left: 40px;
+                img{
+                    float: left;
+                    width: 60px;
+                    border-radius: 50%;
+                    height: 60px;
+                    margin: 0px;
+                }
+                h3{
+                    float: left;
+                    margin: 10px 0px 2px 20px;
+                    a{
+                        color: black;
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                    
+                }
+                span{
+                    float: left;
+                    margin-left: 20px;
+                    a{
+                        font-size: 14px;
+                        color: black;
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                }
+            }
         }
         #more{
             display:block;
