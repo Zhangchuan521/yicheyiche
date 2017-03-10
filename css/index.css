@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0; }
@@ -35,16 +36,26 @@ a {
     height: 80px;
     margin: 0 auto; }
     #search #search-content #logo {
-      width: 200px;
+      width: 250px;
       height: 80px;
-      background: red;
       margin-left: 30px;
       float: left; }
+      #search #search-content #logo img {
+        float: left; }
+      #search #search-content #logo span {
+        display: block;
+        font-size: 26px;
+        line-height: 90px;
+        font-family: "楷体";
+        font-weight: bold;
+        color: dodgerblue; }
+        #search #search-content #logo span:first-letter {
+          font-size: 42px; }
     #search #search-content #txt {
       width: 480px;
       height: 30px;
       margin-top: 24px;
-      margin-left: 100px;
+      margin-left: 50px;
       border: 2px solid red;
       padding-left: 20px; }
     #search #search-content #btn {
@@ -64,7 +75,8 @@ a {
   height: 100%;
   text-align: center; }
   #banner img {
-    width: 1260px; }
+    width: 1260px;
+    height: 400px; }
 
 #nav {
   width: 100%;
@@ -176,59 +188,74 @@ a {
         float: left;
         list-style: none;
         margin: 10px 10px;
-        height: 200px;
+        height: 140px;
         width: 173px;
-        text-align: center; }
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        cursor: pointer; }
         #nav #photo #last li img {
           width: 173px;
-          height: 140px; }
-        #nav #photo #last li span {
-          display: block;
-          margin-top: 10px; }
-          #nav #photo #last li span a {
-            text-decoration: none;
-            color: black; }
-            #nav #photo #last li span a:hover {
-              color: red; }
+          height: 140px;
+          position: absolute;
+          left: 0;
+          top: 0; }
+    #nav #photo span {
+      width: 190px;
+      height: 60px;
+      float: left;
+      display: block;
+      text-align: center; }
+      #nav #photo span a {
+        text-decoration: none;
+        color: black; }
+        #nav #photo span a:hover {
+          color: red; }
 
 #autoPlay {
   width: 1260px;
   height: 440px;
   margin: 0 auto;
   position: relative;
-  margin-top: 20px; }
+  margin-top: 20px;
+  overflow: hidden; }
   #autoPlay ul {
-    width: 1200px;
+    width: 5050px;
     height: 440px;
     position: absolute;
     left: 30px;
-    top: 0;
-    overflow: hidden; }
+    top: 0; }
     #autoPlay ul li {
       width: 1260px;
       height: 440px;
       float: left;
-      list-style: none; }
+      list-style: none;
+      position: relative; }
       #autoPlay ul li div:nth-child(1) {
         position: absolute;
         left: 0px;
-        top: 1px; }
+        top: 1px;
+        cursor: pointer; }
       #autoPlay ul li div:nth-child(2) {
         position: absolute;
         left: 0px;
-        top: 209px; }
+        top: 209px;
+        cursor: pointer; }
       #autoPlay ul li div:nth-child(3) {
         position: absolute;
         left: 310px;
-        top: 0px; }
+        top: 0px;
+        cursor: pointer; }
       #autoPlay ul li div:nth-child(4) {
         position: absolute;
         left: 900px;
-        top: 1px; }
+        top: 1px;
+        cursor: pointer; }
       #autoPlay ul li div:nth-child(5) {
         position: absolute;
         left: 900px;
-        top: 209px; }
+        top: 209px;
+        cursor: pointer; }
   #autoPlay #quanquan {
     width: 160px;
     height: 50px;
@@ -344,65 +371,67 @@ a {
       position: absolute;
       left: 900px;
       top: 22px; }
-      #newCars #box #box-right ul li {
-        width: 80px;
-        height: 56px;
-        list-style: none;
-        background: gold;
-        margin-bottom: 2px;
-        text-align: center;
-        line-height: 56px;
+      #newCars #box #box-right ul {
         position: relative; }
-        #newCars #box #box-right ul li a:nth-child(1) {
-          width: 66px;
-          height: 36px;
-          display: block;
-          line-height: 36px;
-          border-radius: 5px 0 0 5px;
-          text-align: left;
-          padding-left: 8px;
-          text-decoration: none;
-          color: #fff;
-          position: absolute;
-          left: 10px;
-          top: 10px; }
-          #newCars #box #box-right ul li a:nth-child(1):hover {
-            color: black;
-            font-weight: bold;
-            background: #fff; }
-        #newCars #box #box-right ul li div {
-          position: absolute;
-          left: 90px;
-          top: 0px;
-          display: none; }
-          #newCars #box #box-right ul li div p {
-            width: 200px;
-            overflow: hidden;
-            border-top: 1px solid lightgray;
-            border-bottom: 1px solid lightgray; }
-            #newCars #box #box-right ul li div p img {
-              margin: 10px 10px 0px 10px;
-              height: 70px;
-              float: left; }
-            #newCars #box #box-right ul li div p span {
-              float: left;
-              line-height: 90px; }
-            #newCars #box #box-right ul li div p b {
-              line-height: 46px;
-              float: left;
-              font-weight: normal; }
-            #newCars #box #box-right ul li div p a {
-              height: 46px;
-              line-height: 46px;
-              margin-left: 30px;
-              text-align: left;
-              background: #fff;
-              float: left; }
-              #newCars #box #box-right ul li div p a:hover {
-                color: red;
-                background: #fff; }
-        #newCars #box #box-right ul li .show {
-          display: block; }
+        #newCars #box #box-right ul li {
+          width: 70px;
+          height: 46px;
+          list-style: none;
+          background: gold;
+          margin-bottom: 2px;
+          text-align: center;
+          line-height: 56px;
+          padding-top: 10px;
+          padding-left: 10px; }
+          #newCars #box #box-right ul li a:nth-child(1) {
+            width: 66px;
+            height: 36px;
+            display: block;
+            line-height: 36px;
+            border-radius: 5px 0 0 5px;
+            text-align: left;
+            padding-left: 8px;
+            text-decoration: none;
+            color: #fff; }
+            #newCars #box #box-right ul li a:nth-child(1):hover {
+              color: black;
+              font-weight: bold;
+              background: #fff; }
+      #newCars #box #box-right div {
+        width: 230px;
+        height: 522px;
+        position: absolute;
+        left: 90px;
+        top: 0px;
+        display: none; }
+        #newCars #box #box-right div p {
+          width: 200px;
+          overflow: hidden;
+          border-top: 1px solid lightgray;
+          border-bottom: 1px solid lightgray; }
+          #newCars #box #box-right div p img {
+            margin: 10px 10px 0px 10px;
+            height: 70px;
+            float: left; }
+          #newCars #box #box-right div p span {
+            float: left;
+            line-height: 90px; }
+          #newCars #box #box-right div p b {
+            line-height: 46px;
+            float: left;
+            font-weight: normal; }
+          #newCars #box #box-right div p a {
+            height: 46px;
+            line-height: 46px;
+            margin-left: 30px;
+            text-align: left;
+            background: #fff;
+            float: left; }
+            #newCars #box #box-right div p a:hover {
+              color: red;
+              background: #fff; }
+      #newCars #box #box-right .show {
+        display: block; }
 
 #quiz {
   width: 100%;
@@ -429,7 +458,7 @@ a {
     color: red; }
   #question div:nth-child(1) h3 {
     float: left;
-    margin-left: 50px;
+    margin-left: 90px;
     font-size: 38px;
     color: red; }
   #question div:nth-child(1) p {
@@ -456,14 +485,43 @@ a {
   overflow: hidden; }
   #question #bottom #pic {
     width: 360px;
-    height: 280px;
-    overflow: hidden;
+    height: 305px;
     margin: 0px 0px 0px 0px;
     position: relative;
-    float: left; }
+    float: left;
+    padding: 0;
+    border: none;
+    overflow: hidden; }
+    #question #bottom #pic #pic-left {
+      left: 0;
+      top: 100px;
+      width: 30px;
+      height: 56px;
+      color: #fff;
+      font-size: 26px;
+      position: absolute;
+      font-weight: bold;
+      background: rgba(0, 0, 0, 0.4);
+      cursor: pointer; }
+      #question #bottom #pic #pic-left:hover {
+        background: indianred; }
+    #question #bottom #pic #pic-right {
+      right: 0;
+      top: 100px;
+      width: 30px;
+      height: 56px;
+      color: #fff;
+      font-size: 26px;
+      position: absolute;
+      font-weight: bold;
+      background: rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      text-align: right; }
+      #question #bottom #pic #pic-right:hover {
+        background: indianred; }
     #question #bottom #pic ul {
-      width: 360px;
-      height: 230px;
+      width: 1080px;
+      height: 305px;
       position: absolute;
       left: 0px;
       top: 0px; }
@@ -472,22 +530,43 @@ a {
         display: none;
         position: absolute;
         left: 0px;
-        top: 0px; }
-        #question #bottom #pic ul li img {
+        top: 0px;
+        height: 305px;
+        width: 360px; }
+        #question #bottom #pic ul li div:nth-child(1) {
           width: 360px;
-          display: block; }
+          margin: 0px;
+          position: relative;
+          left: 0px;
+          border: none;
+          height: 240px;
+          top: 0px;
+          padding: 0;
+          overflow: hidden;
+          cursor: pointer; }
+          #question #bottom #pic ul li div:nth-child(1) img {
+            width: 360px;
+            position: absolute; }
+        #question #bottom #pic ul li div {
+          width: 350px;
+          height: 100px;
+          background: indianred;
+          line-height: 80px;
+          padding-left: 10px;
+          position: absolute;
+          left: 0px;
+          top: 230px;
+          font-size: 19px;
+          color: #fff;
+          font-weight: bold; }
+      #question #bottom #pic ul li:nth-child(2) {
+        left: 360px; }
+      #question #bottom #pic ul li:nth-child(3) {
+        left: 720px; }
+      #question #bottom #pic ul li:nth-child(4) {
+        left: 1080px; }
       #question #bottom #pic ul .show {
         display: block; }
-    #question #bottom #pic div {
-      width: 340px;
-      height: 100px;
-      background: red;
-      margin-top: 180px;
-      line-height: 120px;
-      padding: 10px;
-      font-size: 19px;
-      color: #fff;
-      font-weight: bold; }
   #question #bottom #seek {
     width: 480px;
     height: 305px;
@@ -610,14 +689,30 @@ a {
     position: absolute;
     left: 0px;
     top: 145px;
-    overflow: hidden; }
+    overflow: hidden;
+    display: none; }
     #video .show div:nth-child(1) {
       width: 360px;
-      height: 420px;
+      height: 405px;
       padding: 0px;
       margin-top: 10px;
       float: left;
       position: relative; }
+      #video .show div:nth-child(1) div:nth-child(1) {
+        width: 360px;
+        height: 286px;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        margin: 0;
+        padding: 0;
+        border: none;
+        overflow: hidden;
+        cursor: pointer; }
+        #video .show div:nth-child(1) div:nth-child(1) img {
+          position: absolute;
+          width: 360px;
+          height: 286px; }
       #video .show div:nth-child(1) div {
         width: 360px;
         height: 120px;
@@ -641,18 +736,25 @@ a {
           margin-top: 25px; }
     #video .show div:nth-child(2) {
       width: 480px;
+      height: 420px;
       float: left; }
       #video .show div:nth-child(2) dl {
         width: 230px;
+        height: 203px;
         float: left;
         margin-left: 10px;
         margin-top: 10px; }
         #video .show div:nth-child(2) dl dt {
-          width: 230px; }
+          width: 230px;
+          height: 153px;
+          position: relative;
+          overflow: hidden;
+          cursor: pointer; }
           #video .show div:nth-child(2) dl dt img {
             display: block;
-            width: 100%;
-            height: 100%; }
+            width: 230px;
+            height: 153px;
+            position: absolute; }
         #video .show div:nth-child(2) dl dd {
           width: 230px;
           height: 50px;
@@ -668,6 +770,8 @@ a {
             margin: 0px 10px; }
           #video .show div:nth-child(2) dl dd span:nth-child(2) {
             float: left; }
+  #video .visible {
+    display: block; }
   #video #videoArea {
     width: 320px;
     position: absolute;
@@ -689,17 +793,30 @@ a {
           background: red;
           opacity: 1; }
     #video #videoArea #content {
-      width: 100%;
-      height: 370px;
+      width: 280px;
+      height: 350px;
       text-align: center;
-      background: #D3D3D3; }
-      #video #videoArea #content img {
-        margin-top: 20px; }
+      background: #D3D3D3;
+      padding-top: 20px;
+      padding-left: 40px; }
+      #video #videoArea #content div:nth-child(1) {
+        border: 0px;
+        width: 240px;
+        height: 160px;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer; }
+        #video #videoArea #content div:nth-child(1) img {
+          width: 240px;
+          height: 160px;
+          border-radius: 0;
+          position: absolute; }
       #video #videoArea #content div {
         margin-top: 20px;
         height: 60px;
-        text-align: left;
-        padding-left: 40px; }
+        text-align: left; }
         #video #videoArea #content div img {
           float: left;
           width: 60px;
